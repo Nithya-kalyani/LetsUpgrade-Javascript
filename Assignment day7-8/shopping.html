@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BIGMART</title>
+    <link href="icon.jpg" rel="icon"/>
+    <link href="shopping.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+
+<body >
+
+    <div class="container-fluid">
+        <div class="header">
+            <span class="headcol" style="font-weight: bold;">BIGMART</span>
+            <span class="search">
+                <input type="text" style="width: 100%;" placeholder="&#128269 Search" id='serstr' onkeyup="search()">
+            </span>
+            <span class="filter">
+                <input type="text"placeholder="Min price"  id="minp"  />
+                <input type="text"  placeholder="Max price" id ="maxp"  />
+                <div class="btn btn-info" onclick="filter()">Filter</div>
+            </span>
+            <span class="cart" >
+                <span class="bagbg"><img class="bagbg" src="cart.png"></span>
+                <span class="bagbg">
+                    <h7 id="numb">0</h7>
+                </span>
+            </span>
+        </div>
+        <div class="productscolumn">
+            <div class="productlayout" id="card">
+                <div class="productcardbg" ></div>
+            </div>
+        </div>
+    
+    <div class=cartd>
+        <h1
+            style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; margin-left: 600px;margin-top: 10PX; color:royalblue;">
+            Cart Items</h1>
+        <div class="productlayout" id="cartcard">
+        </div>
+    
+    </div>
+    </div>
+              
+<script src="shopping.js"></script>
+</body>
+
+</html>
